@@ -7,6 +7,6 @@ router = routers.DefaultRouter()
 
 urlpatterns = [
 	url(r'^', include(router.urls)),
-	url(r'^movies/', movie_views.MovieList.as_view()),
-	url(r'^casters/', caster_views.CasterList.as_view()),
+	url(r'^movies', movie_views.MovieList.as_view()),
+	url(r'^casters', caster_views.CasterList.as_view()),
 ]
